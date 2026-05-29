@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0151)https://019e1d92-1d61-76d8-b4dd-34261427f8cd.claudeusercontent.com/v1/design/projects/019e1d92-1d61-76d8-b4dd-34261427f8cd/serve/assets/video-hero.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style data-omelette-injected="">html,body{background:transparent}</style><script data-omelette-injected="">(()=>{var j=["https://claude.ai","https://preview.claude.ai"];var x=true;var S=30000;var f=3000;document.addEventListener("DOMContentLoaded",()=>{const H=window.Babel;const G="om-src-id";if(H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[G])){H.registerPlugin(G,({types:Y})=>({visitor:{JSXOpeningElement(U,Q){const J=U.node;if(J.name&&J.name.type==="JSXMemberExpression")return;for(let V=0;V<J.attributes.length;V++){const L=J.attributes[V];if(L.type==="JSXAttribute"&&L.name&&L.name.name==="data-om-id")return}const W=Q.file&&Q.file.opts&&Q.file.opts.filename||"?";const Z=J.loc&&J.loc.start;const z=`jsx:${W}:${J.start??0}:${Z?Z.line:0}:${Z?Z.column+1:0}`;J.attributes.push(Y.jsxAttribute(Y.jsxIdentifier("data-om-id"),Y.stringLiteral(z)))}}}))}const k="om-text-extract";let A=false;if(x&&H&&H.registerPlugin&&!(H.availablePlugins&&H.availablePlugins[k])){const Y=window.React;if(Y&&Y.useSyncExternalStore&&Y.createElement){A=true;const U={};const Q=new Set;let J=0;window.__omTextO=U;window.__omTextSet=(z)=>{for(const V in z){const L=z[V];if(L==null)delete U[V];else U[V]=L}J++;Q.forEach((V)=>V())};const W=(z)=>{Q.add(z);return()=>Q.delete(z)};const Z=()=>J;window.__OmT=function z(V){Y.useSyncExternalStore(W,Z,Z);return Y.createElement("span",{"data-om-text":V.i,className:"__om-t"},V.i in U?U[V.i]:V.children)};H.registerPlugin(k,({types:z})=>{const V={style:1,script:1,noscript:1,textarea:1,title:1,option:1,text:1,tspan:1,textPath:1};const L={placeholder:1,alt:1,title:1,label:1,"aria-label":1,"aria-description":1,"aria-placeholder":1};const _=($,C)=>z.logicalExpression("??",z.memberExpression(z.logicalExpression("||",z.memberExpression(z.identifier("window"),z.identifier("__omTextO")),z.objectExpression([])),z.stringLiteral($),true),C);const E=($)=>$.file&&$.file.opts&&$.file.opts.filename||"?";const B=($)=>$.file&&$.file.code||"";const b=($,C)=>{const X=(F)=>F&&F.start!=null&&F.end!=null&&(F.type==="StringLiteral"||F.type==="TemplateLiteral"&&F.expressions.length===0)?[F.start,F.end]:null;const N=X(C);if(N)return N;if(C&&C.type==="Identifier"){const F=$.scope.getBinding(C.name);if(F&&F.constant&&F.path.node.type==="VariableDeclarator"){return X(F.path.node.init)}}return null};const M=($,C,X)=>{const N=$.node;let F=false;const w=(K,q)=>{F=true;return z.jsxElement(z.jsxOpeningElement(z.jsxIdentifier("__OmT"),[z.jsxAttribute(z.jsxIdentifier("i"),z.stringLiteral(K))],false),z.jsxClosingElement(z.jsxIdentifier("__OmT")),[q],false)};const D=N.children.map((K)=>{if(K.type==="JSXText"){if(K.start==null||K.end==null)return K;const q=X.slice(K.start,K.end);const R=q.length-q.trimStart().length;const m=q.length-q.trimEnd().length;if(R+m>=q.length)return K;return w(`txt:${C}:${K.start+R}:${K.end-m}`,K)}if(K.type==="JSXExpressionContainer"){const q=b($,K.expression);if(q)return w(`str:${C}:${q[0]}:${q[1]}`,K)}return K});if(F)N.children=D};return{visitor:{JSXOpeningElement($,C){const X=$.node;const N=E(C);const F={};for(let w=0;w<X.attributes.length;w++){const D=X.attributes[w];if(D.type!=="JSXAttribute"||!D.name)continue;const K=D.name.name;if(!L[K])continue;if(!D.value||D.value.type!=="StringLiteral")continue;if(D.value.start==null||D.value.end==null)continue;const q=`txt:${N}:${D.value.start}:${D.value.end}`;F[K]=q;D.value=z.jsxExpressionContainer(_(q,z.stringLiteral(D.value.value)))}if(Object.keys(F).length){X.attributes.push(z.jsxAttribute(z.jsxIdentifier("data-om-text-attrs"),z.stringLiteral(JSON.stringify(F))))}},JSXElement($,C){const X=$.node.openingElement;const N=X&&X.name&&X.name.name;if(N==="__OmT")return;if(typeof N==="string"&&V[N])return;M($,E(C),B(C))},JSXFragment($,C){M($,E(C),B(C))}}}})}}const u=A?["transform-react-jsx-source",G,k]:["transform-react-jsx-source",G];document.querySelectorAll('script[type="text/babel"],script[type="text/jsx"]').forEach((Y,U)=>{const Q=Y.getAttribute("data-plugins")||"";const J=u.filter((W)=>Q.indexOf(W)<0);if(J.length){Y.setAttribute("data-plugins",Q?`${Q},${J.join(",")}`:J.join(","))}if(!Y.hasAttribute("data-filename")){Y.setAttribute("data-filename",Y.getAttribute("src")||`inline-${U}`)}})});var y=window.parent;if(y&&y!==window){const H=(Q,J)=>{try{y.postMessage({__omelette_log:true,type:Q,data:J},"*")}catch{}};["log","warn","error"].forEach((Q)=>{const J=console[Q];console[Q]=(...W)=>{const Z=W.map((z)=>{try{return typeof z==="object"?JSON.stringify(z):String(z)}catch{try{return String(z)}catch{return"[unstringifiable]"}}}).join(" ");H(Q,Z);J.apply(console,W)}});window.addEventListener("error",(Q)=>{const J=Q.target;if(J&&J!==window&&J.tagName){const W=J.src||J.href||"";H("resource_error",`${J.tagName} failed to load: ${W}`)}else{H("error",`${Q.message||"Unknown error"} at ${Q.filename||"?"}:${Q.lineno||0}:${Q.colno||0}`)}},true);window.addEventListener("unhandledrejection",(Q)=>{const J=Q.reason;const W=J instanceof Error?`${J.message} ${J.stack}`:String(J);H("error",`Unhandled rejection: ${W}`)});const G=()=>{try{y.postMessage({type:"omelette:height",height:document.documentElement.scrollHeight},"*")}catch{}};if(document.readyState==="complete")G();else window.addEventListener("load",G);if(window.ResizeObserver)new ResizeObserver(G).observe(document.documentElement);const k={};let A=0;window.claude={complete(Q){return new Promise((J,W)=>{if(!j.length){W(new Error("claude.complete: no parent origin"));return}const Z=`c${++A}`;const z=()=>setTimeout(()=>{delete k[Z];W(new Error(`claude.complete: no data for ${S/1000}s`))},S);const V=z();k[Z]={resolve:J,reject:W,text:"",t:V,arm:z};try{for(const L of j){y.postMessage({__om_api:true,id:Z,body:Q},L)}}catch(L){clearTimeout(V);delete k[Z];W(L)}})}};const u={};let Y=0;window.omelette={writeFile:(Q,J)=>new Promise((W,Z)=>{if(!j.length){W();return}const z=`f${++Y}`;const V=setTimeout(()=>{delete u[z];W()},f);u[z]={resolve:W,reject:Z,t:V};try{for(const L of j){y.postMessage({__om_file:true,id:z,op:"write",path:Q,content:J},L)}}catch{clearTimeout(V);delete u[z];W()}})};const U=(Q)=>{try{return JSON.stringify(Q)}catch{return JSON.stringify(String(Q))}};window.addEventListener("message",(Q)=>{if(j.indexOf(Q.origin)<0)return;if(Q.source!==y)return;const J=Q.data;if(!J)return;if(J.type==="omelette-preview-refresh"){if(typeof J.token!=="string"||!/^[0-9a-f.-]+(\.(rc|pr-[0-9]+))?(\.[0-9]+\.[0-9a-f]{16})?$/.test(J.token))return;const z=Math.max(1,Math.floor((J.expiresAt||0)-Date.now()/1000));document.cookie="__Host-omelette-preview="+J.token+"; Path=/; Secure; SameSite=None; Partitioned; Max-Age="+z;return}if(J.__om_file_r){const z=u[J.id];if(!z)return;clearTimeout(z.t);delete u[J.id];if(J.ok)z.resolve();else z.reject(new Error(J.error||"write failed"));return}if(J.__om_api_r){const z=k[J.id];if(!z)return;if(J.error!=null){clearTimeout(z.t);delete k[J.id];z.reject(new Error(J.error));return}if(J.chunk!=null){clearTimeout(z.t);z.t=z.arm();z.text+=J.chunk;return}if(J.done){clearTimeout(z.t);delete k[J.id];z.resolve(J.text!=null?J.text:z.text);return}return}if(!J.__om_eval)return;const W=J;const Z=(z)=>{Q.source.postMessage({...z,__om_eval_r:1,id:W.id},Q.origin)};try{const z=(0,eval)(W.code);if(z&&typeof z.then==="function"){z.then((V)=>Z({ok:1,v:U(V)}),(V)=>Z({ok:0,e:String(V)}))}else{Z({ok:1,v:U(z)})}}catch(z){Z({ok:0,e:String(z)})}})}})();
+</script>
+
+
+<title>OkDébouchage — Vidéo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./css2(1)" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:100%;height:100%;background:#0a0a0a;overflow:hidden;font-family:"Archivo Black",Impact,sans-serif;color:#fafafa}
+
+  /* Slideshow layer (top) */
+  .slideshow{position:fixed;inset:0;z-index:2;opacity:1;transition:opacity .6s ease}
+  .slideshow.gone{opacity:0;pointer-events:none;transition:opacity 1.2s ease}
+  .slide{position:absolute;inset:0;opacity:0;transition:opacity .7s ease}
+  .slide.on{opacity:1}
+  .slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kb 7s linear forwards}
+  .slide:nth-child(2) img{animation-direction:reverse}
+  .slide:nth-child(3) img{animation-name:kb2}
+  @keyframes kb{0%{transform:scale(1.05)}100%{transform:scale(1.16) translate(-1.5%,-1%)}}
+  @keyframes kb2{0%{transform:scale(1.05)}100%{transform:scale(1.16) translate(1.5%,-1%)}}
+
+  .vignette{position:absolute;inset:0;background:
+    linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,0) 28%,rgba(0,0,0,0) 55%,rgba(0,0,0,.85) 100%),
+    radial-gradient(120% 80% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.55) 100%);
+    pointer-events:none}
+
+  .caption{position:absolute;left:0;right:0;bottom:0;padding:22px 22px 26px;color:#fafafa;display:flex;flex-direction:column;gap:8px;pointer-events:none}
+  .caption .tag{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#FFB347;opacity:.9}
+  .caption .line{font-family:"Archivo Black",Impact,sans-serif;font-size:clamp(20px,5.2vw,28px);line-height:1.05;letter-spacing:-0.01em;text-wrap:balance}
+  .caption .line em{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;color:#FFB347;letter-spacing:0}
+
+  .topbar{position:absolute;top:14px;left:14px;right:14px;display:flex;align-items:center;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#fafafa;pointer-events:none;z-index:3}
+  .topbar .live{display:flex;align-items:center;gap:6px;background:rgba(0,0,0,.6);backdrop-filter:blur(8px);padding:6px 10px;border-radius:6px}
+  .topbar .ldot{width:6px;height:6px;border-radius:50%;background:#ff3b30;animation:pulse 1.4s infinite}
+  .topbar .ok{background:rgba(255,255,255,.92);color:#0a0a0a;padding:6px 10px;border-radius:6px}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+  .progress{position:absolute;left:14px;right:14px;bottom:0;height:3px;display:flex;gap:4px;padding-bottom:14px;pointer-events:none;z-index:3}
+  .progress .bar{flex:1;height:3px;background:rgba(255,255,255,.22);border-radius:2px;overflow:hidden;position:relative}
+  .progress .bar::after{content:"";position:absolute;left:0;top:0;bottom:0;width:0%;background:#fafafa;transition:width .12s linear}
+  .progress .bar.done::after{width:100%}
+  .progress .bar.active::after{width:var(--p,0%)}
+
+  /* Original video layer (below) */
+  .videoframe{position:fixed;inset:0;z-index:1;border:0;width:100%;height:100%;background:#0a0a0a}
+</style>
+</head>
+<body>
+  <!-- Original debouchage video, loaded behind the slideshow so it's ready when we fade -->
+  <iframe class="videoframe" id="videoframe" src="./video-original.html" title="OkDébouchage — Vidéo" allow="autoplay" loading="eager"></iframe>
+
+  <div class="slideshow" id="slideshow">
+    <div class="slide on" data-tag="01 · INTERVENTION"><img src="./camionnette.png" alt="" style=""></div>
+    <div class="slide" data-tag="02 · HYDROCURAGE"><img src="./bruxelles-maquette.png" alt="" style=""></div>
+    <div class="slide" data-tag="03 · BRUXELLES"><img src="./bruxelles-maquette.png" alt="" style=""></div>
+    <div class="vignette"></div>
+
+    <div class="topbar">
+      <span class="ok">OK · DÉBOUCHAGE</span>
+      <span class="live"><span class="ldot"></span>EN INTERVENTION</span>
+    </div>
+
+    <div class="caption">
+      <span class="tag" id="tag">01 · INTERVENTION</span>
+      <div class="line" id="line">Camion équipé, <em>chez vous</em> en 45 min.</div>
+    </div>
+
+    <div class="progress" id="progress">
+      <div class="bar active" style=""></div><div class="bar" style=""></div><div class="bar" style=""></div>
+    </div>
+  </div>
+
+<script>
+  const SLIDE_MS = 6667; // 3 × 6.67s ≈ 20s of photos, then fade to the letters video
+  const VIDEO_MS = 20000; // ~durée de la vidéo des lettres avant de revenir aux photos
+  const slides = document.querySelectorAll('.slide');
+  const bars = document.querySelectorAll('#progress .bar');
+  const tagEl = document.getElementById('tag');
+  const lineEl = document.getElementById('line');
+  const shell = document.getElementById('slideshow');
+  const videoframe = document.getElementById('videoframe');
+
+  const captions = [
+    {tag:'01 · INTERVENTION', html:'Camion équipé, <em>chez vous</em> en 45 min.'},
+    {tag:'02 · HYDROCURAGE',  html:'Bouchon évacué. <em>Garanti</em> 6 mois.'},
+    {tag:'03 · BRUXELLES',    html:'19 communes. <em>7j/7</em>, sans majoration.'}
+  ];
+
+  let idx = 0, t0 = 0, raf = null, done = false;
+
+  function show(i){
+    slides.forEach((s,k)=>s.classList.toggle('on', k===i));
+    bars.forEach((b,k)=>{
+      b.classList.toggle('done', k<i);
+      b.classList.toggle('active', k===i);
+    });
+    tagEl.textContent = captions[i].tag;
+    lineEl.innerHTML = captions[i].html;
+    const img = slides[i].querySelector('img');
+    img.style.animation = 'none';
+    img.offsetHeight;
+    img.style.animation = '';
+  }
+
+  function finish(){
+    if(done) return;
+    done = true;
+    cancelAnimationFrame(raf);
+    shell.classList.add('gone');
+    // Après ~20s de vidéo des lettres, on relance le slideshow → boucle infinie
+    setTimeout(restart, VIDEO_MS);
+  }
+
+  function restart(){
+    // Relance la vidéo des lettres depuis le début pour que la prochaine fenêtre soit propre
+    try { videoframe.src = videoframe.src; } catch(e){}
+    done = false;
+    idx = 0;
+    t0 = 0;
+    bars.forEach(b=>{ b.classList.remove('done','active'); b.style.removeProperty('--p'); });
+    shell.classList.remove('gone');
+    show(0);
+    raf = requestAnimationFrame(tick);
+  }
+
+  function tick(t){
+    if(!t0) t0 = t;
+    const elapsed = t - t0;
+    const p = Math.min(100, (elapsed/SLIDE_MS)*100);
+    bars[idx].style.setProperty('--p', p+'%');
+    if(elapsed >= SLIDE_MS){
+      if(idx === slides.length - 1){ finish(); return; }
+      idx++;
+      t0 = t;
+      show(idx);
+    }
+    raf = requestAnimationFrame(tick);
+  }
+
+  show(0);
+  raf = requestAnimationFrame(tick);
+</script>
+
+
+</body></html>

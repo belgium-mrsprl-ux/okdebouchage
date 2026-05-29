@@ -1,0 +1,6 @@
+.DS_Store
+.vercel
+node_modules/
+ChatGPT Image*
+*.DS_Store
+node_modules/
