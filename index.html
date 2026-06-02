@@ -445,6 +445,39 @@
     .reveal{opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease}
     .reveal.in{opacity:1;transform:none}
   }
+
+  /* Testimonials columns (scrolling marquee) */
+  .tcols-section{background:var(--paper);padding:80px 0;position:relative}
+  .tcols-head{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:540px;margin:0 auto 40px}
+  .tcols-pill{border:1px solid var(--line);background:#fff;padding:6px 14px;border-radius:8px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted)}
+  .tcols-title{font-size:clamp(24px,3.4vw,40px);font-weight:800;letter-spacing:-0.02em;margin-top:18px;line-height:1.1}
+  .tcols-sub{margin-top:14px;opacity:.75;font-size:15px}
+  .tcols-wrap{display:flex;justify-content:center;gap:24px;margin-top:40px;max-height:680px;overflow:hidden;
+    -webkit-mask-image:linear-gradient(to bottom,transparent,black 18%,black 82%,transparent);
+            mask-image:linear-gradient(to bottom,transparent,black 18%,black 82%,transparent)}
+  .tcol{flex:0 0 auto;width:100%;max-width:320px}
+  .tcol-inner{display:flex;flex-direction:column;gap:24px;padding-bottom:24px;animation:tcolScroll linear infinite;will-change:transform}
+  .tcol:hover .tcol-inner{animation-play-state:paused}
+  .tcol-1 .tcol-inner{animation-duration:38s}
+  .tcol-2 .tcol-inner{animation-duration:48s}
+  .tcol-3 .tcol-inner{animation-duration:42s}
+  @keyframes tcolScroll{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+  .tcard{padding:28px;border-radius:24px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(15,15,15,.05);background:#fff;font-size:15px;line-height:1.55;color:var(--ink-2)}
+  .tcard .stars{font-size:14px;letter-spacing:1px;color:var(--ink);margin-bottom:8px}
+  .tcard .text{margin:0}
+  .tcard .author{display:flex;align-items:center;gap:12px;margin-top:18px}
+  .tcard .avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:13px;letter-spacing:.5px;flex-shrink:0;background:linear-gradient(135deg,#1f2937,#4b5563)}
+  .tcard .avatar.c2{background:linear-gradient(135deg,#FFB347,#e89030)}
+  .tcard .avatar.c3{background:linear-gradient(135deg,#0f766e,#0e9488)}
+  .tcard .avatar.c4{background:linear-gradient(135deg,#b91c1c,#dc2626)}
+  .tcard .avatar.c5{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+  .tcard .avatar.c6{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+  .tcard .meta{display:flex;flex-direction:column;min-width:0}
+  .tcard .name{font-weight:600;color:var(--ink);line-height:1.2;font-size:14px}
+  .tcard .role{color:var(--muted);font-size:12px;line-height:1.3;margin-top:2px;font-family:"JetBrains Mono",monospace;letter-spacing:.05em;text-transform:uppercase}
+  @media (max-width:767px){.tcols-wrap{gap:16px;max-height:540px}.tcol-2,.tcol-3{display:none}}
+  @media (min-width:768px) and (max-width:1023px){.tcol-3{display:none}}
+
 </style>
 </head>
 <body>
@@ -614,6 +647,229 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- BLOC TESTIMONIALS (deplaced ici : entre paiement 3x et bxl) -->
+<section class="tcols-section" data-screen-label="Avis clients Google">
+  <div class="container">
+    <div class="tcols-head">
+      <span class="tcols-pill">Avis Google · vérifiés</span>
+      <h2 class="tcols-title">Ce que disent nos clients sur Google.</h2>
+      <p class="tcols-sub">Avis publics, vérifiables sur notre fiche Google Business — pas de filtre, pas de tri.</p>
+    </div>
+    <div class="tcols-wrap">
+      <div class="tcol tcol-1">
+        <div class="tcol-inner">
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Une équipe familiale et professionnelle, transparent dans les prix, je referais appel à OkDébouchage 😃😃😃 »</p>
+          <div class="author">
+            <div class="avatar c1">SM</div>
+            <div class="meta">
+              <div class="name">Samir Marini</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Débouchage rapide et efficace, merci OkDébouchage !!! »</p>
+          <div class="author">
+            <div class="avatar c2">WB</div>
+            <div class="meta">
+              <div class="name">Wesley Batista</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Très efficace et viennent en 30 min. »</p>
+          <div class="author">
+            <div class="avatar c3">GB</div>
+            <div class="meta">
+              <div class="name">Gabriel Bernardes Silva Lino</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Une équipe familiale et professionnelle, transparent dans les prix, je referais appel à OkDébouchage 😃😃😃 »</p>
+          <div class="author">
+            <div class="avatar c1">SM</div>
+            <div class="meta">
+              <div class="name">Samir Marini</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Débouchage rapide et efficace, merci OkDébouchage !!! »</p>
+          <div class="author">
+            <div class="avatar c2">WB</div>
+            <div class="meta">
+              <div class="name">Wesley Batista</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Très efficace et viennent en 30 min. »</p>
+          <div class="author">
+            <div class="avatar c3">GB</div>
+            <div class="meta">
+              <div class="name">Gabriel Bernardes Silva Lino</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tcol tcol-2">
+        <div class="tcol-inner">
+        <div class="tcard">
+          <div class="stars">★★★★<span style="color:#bbb">★</span></div>
+          <p class="text">« Très satisfait du travail accompli. »</p>
+          <div class="author">
+            <div class="avatar c4">GL</div>
+            <div class="meta">
+              <div class="name">Gilbert Lambrechts</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Simple, rapide et efficace. 👌 »</p>
+          <div class="author">
+            <div class="avatar c5">K</div>
+            <div class="meta">
+              <div class="name">Kes</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Le service rapide, disponible tous les jours de la semaine, est vraiment fantastique. »</p>
+          <div class="author">
+            <div class="avatar c6">DD</div>
+            <div class="meta">
+              <div class="name">Daniel Dutra</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★<span style="color:#bbb">★</span></div>
+          <p class="text">« Très satisfait du travail accompli. »</p>
+          <div class="author">
+            <div class="avatar c4">GL</div>
+            <div class="meta">
+              <div class="name">Gilbert Lambrechts</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Simple, rapide et efficace. 👌 »</p>
+          <div class="author">
+            <div class="avatar c5">K</div>
+            <div class="meta">
+              <div class="name">Kes</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Le service rapide, disponible tous les jours de la semaine, est vraiment fantastique. »</p>
+          <div class="author">
+            <div class="avatar c6">DD</div>
+            <div class="meta">
+              <div class="name">Daniel Dutra</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="tcol tcol-3">
+        <div class="tcol-inner">
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« D'excellents professionnels, une entreprise de confiance. »</p>
+          <div class="author">
+            <div class="avatar c3">MN</div>
+            <div class="meta">
+              <div class="name">Mayara Nascimento</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Top !!! »</p>
+          <div class="author">
+            <div class="avatar c4">AB</div>
+            <div class="meta">
+              <div class="name">Angie de Bray</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Intervention rapide, équipe sérieuse, prix correct. À recommander sans hésiter. »</p>
+          <div class="author">
+            <div class="avatar c1">CB</div>
+            <div class="meta">
+              <div class="name">Client Bruxelles</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« D'excellents professionnels, une entreprise de confiance. »</p>
+          <div class="author">
+            <div class="avatar c3">MN</div>
+            <div class="meta">
+              <div class="name">Mayara Nascimento</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Top !!! »</p>
+          <div class="author">
+            <div class="avatar c4">AB</div>
+            <div class="meta">
+              <div class="name">Angie de Bray</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="stars">★★★★★</div>
+          <p class="text">« Intervention rapide, équipe sérieuse, prix correct. À recommander sans hésiter. »</p>
+          <div class="author">
+            <div class="avatar c1">CB</div>
+            <div class="meta">
+              <div class="name">Client Bruxelles</div>
+              <div class="role">Google · FR</div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -795,63 +1051,7 @@
       <div class="big-stat"><span class="num">24 / 7</span><span class="lbl">Sans majoration</span></div>
     </div>
 
-    <h3 style="margin-top:72px;margin-bottom:8px">Ce que disent nos clients sur Google.</h3>
-    <p class="muted">Avis publics, vérifiables sur notre fiche Google Business.</p>
 
-    <div class="review-grid">
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Une équipe familiale et professionnelle, transparent dans les prix, je referais appel à OkDébouchage 😃😃😃 »</p>
-        <div class="author"><span class="name">Samir Marini</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Débouchage rapide et efficace, merci OkDébouchage !!! »</p>
-        <div class="author"><span class="name">Wesley Batista</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Très efficace et viennent en 30 min. »</p>
-        <div class="author"><span class="name">Gabriel Bernardes Silva Lino</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★<span style="color:#bbb">★</span></div>
-        <p class="text">« Très satisfait du travail accompli. »</p>
-        <div class="author"><span class="name">Gilbert Lambrechts</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Simple, rapide et efficace. 👌 »</p>
-        <div class="author"><span class="name">Kes</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Le service rapide, disponible tous les jours de la semaine, est vraiment fantastique. »</p>
-        <div class="author"><span class="name">Daniel Dutra</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« D'excellents professionnels, une entreprise de confiance. »</p>
-        <div class="author"><span class="name">Mayara Nascimento</span><span class="badge">Google · FR</span></div>
-      </div>
-      <div class="review">
-        <div class="stars">★★★★★</div>
-        <p class="text">« Top !!! »</p>
-        <div class="author"><span class="name">Angie de Bray</span><span class="badge">Google · FR</span></div>
-      </div>
-    </div>
-
-    <div class="lang-row">
-      <span class="pill">Bruxelles</span>
-      <p style="margin:0"><strong>Une équipe locale qui connaît votre quartier.</strong> Nos clients nous font confiance dans toutes les communes — de Schaerbeek à Anderlecht, d'Ixelles à Saint-Gilles, et toute la périphérie.</p>
-    </div>
-
-    <p class="verifiable">Tous les avis sont publics et vérifiables sur notre <a href="#" target="_blank" rel="noopener noreferrer external">fiche Google Business →</a></p>
-    <p class="continuity">OkDébouchage est la continuité directe de notre activité antérieure. Mêmes professionnels, même équipe, même engagement — nouveau nom commercial.</p>
-
-    <div style="margin-top:48px;display:flex;justify-content:center">
-      <a class="btn btn--primary btn--lg" href="https://wa.me/32493389823">Rejoignez nos 3 500 clients - Réponse en 3 min</a>
-    </div>
   </div>
 </section>
 
