@@ -519,6 +519,45 @@
             mask-image:linear-gradient(to bottom,transparent,#000 18%,#000 82%,transparent);
   }
 
+
+  /* === Squishy hover effect on .price-card === */
+  .price-card{overflow:hidden;isolation:isolate}
+  .price-card > *:not(.squishy-bg){position:relative;z-index:2}
+  .price-card .pamount{transform-origin:top left;transition:transform 1s cubic-bezier(.68,-0.55,.27,1.55)}
+  .price-card .squishy-bg{
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+    overflow:visible;
+    transform-origin:center center;
+    transition:transform 1s cubic-bezier(.68,-0.55,.27,1.55);
+    width:100%;
+    height:100%;
+  }
+  .price-card .squishy-bg .sb-circle,
+  .price-card .squishy-bg .sb-ellipse{
+    transform-origin:center;
+    transform-box:fill-box;
+    transition:transform 1s cubic-bezier(.68,-0.55,.27,1.55) .2s;
+    fill:rgba(0,0,0,.08);
+  }
+  .price-card.popular .squishy-bg .sb-circle,
+  .price-card.popular .squishy-bg .sb-ellipse{fill:rgba(255,255,255,.10)}
+  /* Hover state */
+  .price-card{transform-origin:center}
+  .price-card:hover{transform:scale(1.05) !important; box-shadow:0 30px 60px -20px rgba(0,0,0,.22) !important}
+  .price-card:hover .squishy-bg{transform:scale(1.5)}
+  .price-card:hover .squishy-bg .sb-circle{transform:scaleY(.5) translateY(-25px)}
+  .price-card:hover .squishy-bg .sb-ellipse{transform:scaleY(2.25) translateY(-25px)}
+  .price-card:hover .pamount{transform:scale(1.06)}
+  /* Tap state (mobile touch) */
+  .price-card:active{transform:scale(1.05) !important}
+  .price-card:active .squishy-bg{transform:scale(1.5)}
+  .price-card:active .squishy-bg .sb-circle{transform:scaleY(.5) translateY(-25px)}
+  .price-card:active .squishy-bg .sb-ellipse{transform:scaleY(2.25) translateY(-25px)}
+  .price-card:active .pamount{transform:scale(1.06)}
+
 </style>
 </head>
 <body>
@@ -606,6 +645,7 @@
 
     <div class="price-grid">
       <article class="price-card">
+        <svg class="squishy-bg" viewBox="0 0 320 384" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sb-circle" cx="160.5" cy="114.5" r="101.5"/><ellipse class="sb-ellipse" cx="160.5" cy="265.5" rx="101.5" ry="43.5"/></svg>
         <span class="ptag">01 · Manuel</span>
         <h3 class="pname">Débouchage manuel</h3>
         <div class="pamount"><span>150</span><sup>€</sup><span class="ttc">TTC</span></div>
@@ -625,6 +665,7 @@
       </article>
 
       <article class="price-card">
+        <svg class="squishy-bg" viewBox="0 0 320 384" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sb-circle" cx="160.5" cy="114.5" r="101.5"/><ellipse class="sb-ellipse" cx="160.5" cy="265.5" rx="101.5" ry="43.5"/></svg>
         <span class="ptag">02 · Caméra</span>
         <h3 class="pname">Passage caméra</h3>
         <div class="pamount"><span>200</span><sup>€</sup><span class="ttc">TTC</span></div>
@@ -642,6 +683,7 @@
       </article>
 
       <article class="price-card popular">
+        <svg class="squishy-bg" viewBox="0 0 320 384" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle class="sb-circle" cx="160.5" cy="114.5" r="101.5"/><ellipse class="sb-ellipse" cx="160.5" cy="265.5" rx="101.5" ry="43.5"/></svg>
         <span class="badge">Plus populaire</span>
         <span class="ptag">03 · Hydrocurage</span>
         <h3 class="pname" style="color:#fff">Hydrocurage haute pression</h3>
