@@ -53,7 +53,8 @@
   <iframe class="videoframe" id="videoframe" src="video-original.html" title="OkDébouchage — Vidéo" allow="autoplay" loading="eager"></iframe>
 
   <div class="slideshow" id="slideshow">
-    <div class="slide" data-tag="01 · INTERVENTION"><img src="hero-1-camionnette.png?v=2" alt=""></div>
+           <div class="slide" data-tag="00 · SEE IT WORK"><img src="hero-0-kobalt.png" alt=""></div>
+   <div class="slide" data-tag="01 · INTERVENTION"><img src="hero-1-camionnette.png?v=2" alt=""></div>
     <div class="slide" data-tag="02 · HYDROCURAGE"><img src="hero-2-cuisine.png?v=2" alt=""></div>
     <div class="slide" data-tag="04 · ÉQUIPE"><img src="hero-7-equipe.png?v=3" alt=""></div>
     <div class="slide" data-tag="05 · CHANTIER"><img src="hero-6-machine.png?v=2" alt=""></div>
@@ -76,12 +77,12 @@
     </div>
 
     <div class="progress" id="progress">
-      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+      <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
     </div>
   </div>
 
 <script>
-  const SLIDE_MS = 2400; // 11 × 2.4s ≈ 26s of photos, then fade to the letters video
+  const SLIDE_MS = 2400; // 12 × 2.4s ≈ 29 s of photos, thenfade to the letters video
   const VIDEO_MS = 20000; // ~durée de la vidéo des lettres avant de revenir aux photos
   const slides = document.querySelectorAll('.slide');
   const bars = document.querySelectorAll('#progress .bar');
@@ -91,7 +92,8 @@
   const videoframe = document.getElementById('videoframe');
 
   const captions = [
-    {tag:'01 · INTERVENTION', html:'Camion équipé, <em>chez vous</em> en 45 min.'},
+   {tag:'00 · SEE IT WORK',   html:'Voir le débouchage en action. <em>En direct.</em>'}, 
+   {tag:'01 · INTERVENTION', html:'Camion équipé, <em>chez vous</em> en 45 min.'},
     {tag:'02 · HYDROCURAGE',  html:'Caméra thermique. <em>Diagnostic</em> offert.'},
     {tag:'03 · TERRAIN',      html:'Équipe locale, <em>vraies mains</em>, vrais résultats.'},
     {tag:'04 · ÉQUIPE',       html:'Sur place avec <em>le bon matos.</em>'},
