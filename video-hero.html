@@ -53,19 +53,19 @@
   <iframe class="videoframe" id="videoframe" src="video-original.html" title="OkDébouchage — Vidéo" allow="autoplay" loading="eager"></iframe>
 
   <div class="slideshow" id="slideshow">
-   <div class="slide" data-tag="01 · INTERVENTION"><img src="hero-1-camionnette.png?v=2" alt=""></div>
-    <div class="slide" data-tag="02 · HYDROCURAGE"><img src="hero-2-cuisine.png?v=2" alt=""></div>
-    <div class="slide" data-tag="04 · ÉQUIPE"><img src="hero-7-equipe.png?v=3" alt=""></div>
-    <div class="slide" data-tag="05 · CHANTIER"><img src="hero-6-machine.png?v=2" alt=""></div>
+    <div class="slide" data-tag="11 · RÉSULTAT"><img src="hero-8-resultat.png?v=3" alt=""></div>
+      <div class="slide" data-tag="12 · LAVABO"><img src="hero-12-lavabo.png" alt=""></div>
+      <div class="slide" data-tag="13 · BAIGNOIRE"><img src="hero-13-baignoire.png" alt=""></div>
+      <div class="slide" data-tag="14 · TOILETTE"><img src="hero-14-toilette.png" alt=""></div>
     <div class="slide" data-tag="06 · ÉQUIPEMENT"><img src="hero-3-bruxelles.png?v=2" alt=""></div>
     <div class="slide" data-tag="07 · TRANSPORT"><img src="hero-9-transport.png?v=3" alt=""></div>
     <div class="slide" data-tag="08 · CAMÉRA"><img src="hero-5-action.png?v=2" alt=""></div>
     <div class="slide" data-tag="09 · DIAGNOSTIC"><img src="hero-10-diagnostic.png?v=3" alt=""></div>
     <div class="slide" data-tag="10 · MATÉRIEL"><img src="hero-11-chantier.png?v=3" alt=""></div>
-    <div class="slide" data-tag="11 · RÉSULTAT"><img src="hero-8-resultat.png?v=3" alt=""></div>
-      <div class="slide" data-tag="12 · LAVABO"><img src="hero-12-lavabo.png" alt=""></div>
-      <div class="slide" data-tag="13 · BAIGNOIRE"><img src="hero-13-baignoire.png" alt=""></div>
-      <div class="slide" data-tag="14 · TOILETTE"><img src="hero-14-toilette.png" alt=""></div>
+   <div class="slide" data-tag="01 · INTERVENTION"><img src="hero-1-camionnette.png?v=2" alt=""></div>
+    <div class="slide" data-tag="02 · HYDROCURAGE"><img src="hero-2-cuisine.png?v=2" alt=""></div>
+    <div class="slide" data-tag="04 · ÉQUIPE"><img src="hero-7-equipe.png?v=3" alt=""></div>
+    <div class="slide" data-tag="05 · CHANTIER"><img src="hero-6-machine.png?v=2" alt=""></div>
     <div class="vignette"></div>
 
     <div class="topbar">
@@ -94,20 +94,20 @@
   const videoframe = document.getElementById('videoframe');
 
   const captions = [
-   {tag:'01 · INTERVENTION', html:'Camion équipé, <em>chez vous</em> en 45 min.'},
-    {tag:'02 · HYDROCURAGE',  html:'Caméra thermique. <em>Diagnostic</em> offert.'},
-    {tag:'03 · TERRAIN',      html:'Équipe locale, <em>vraies mains</em>, vrais résultats.'},
-    {tag:'04 · ÉQUIPE',       html:'Sur place avec <em>le bon matos.</em>'},
-    {tag:'05 · CHANTIER',     html:'Au boulot, <em>jusqu\'au bouchon.</em>'},
-    {tag:'06 · ÉQUIPEMENT',   html:'Matériel pro RIDGID. <em>Garantie</em> 3 mois.'},
-    {tag:'07 · TRANSPORT',    html:'Matériel chez vous, <em>en 45 min.</em>'},
-    {tag:'08 · CAMÉRA',       html:'Diagnostic précis. <em>Devis</em> avant intervention.'},
-    {tag:'09 · DIAGNOSTIC',   html:'Caméra haute déf. <em>Pas de devinette.</em>'},
-    {tag:'10 · MATÉRIEL',     html:'Hydrocureur, furet, caméra. <em>Tout</em> avec nous.'},
-    {tag:'11 · RÉSULTAT',     html:'Le bouchon retiré. <em>Pas devant.</em>'},
-   {tag:'12 · LAVABO',    html:'Débouchage sous lavabo. <em>Outillage professionnel.</em>'},
-   {tag:'13 · BAIGNOIRE',  html:'Baignoire déboucheuse. <em>Résultat immédiat.</em>'},
-   {tag:'14 · TOILETTE',   html:'WC débouché. <em>Intervention rapide.</em>'}
+   {tag:'01 Â· INTERVENTION', html:'Camion Ã©quipÃ©, <em>chez vous</em> en 45 min.'},
+    {tag:'02 Â· HYDROCURAGE',  html:'CamÃ©ra thermique. <em>Diagnostic</em> offert.'},
+    {tag:'03 Â· TERRAIN',      html:'Ãquipe locale, <em>vraies mains</em>, vrais rÃ©sultats.'},
+    {tag:'04 Â· ÃQUIPE',       html:'Sur place avec <em>le bon matos.</em>'},
+    {tag:'05 Â· CHANTIER',     html:'Au boulot, <em>jusqu\'au bouchon.</em>'},
+    {tag:'06 Â· ÃQUIPEMENT',   html:'MatÃ©riel pro RIDGID. <em>Garantie</em> 3 mois.'},
+    {tag:'07 Â· TRANSPORT',    html:'MatÃ©riel chez vous, <em>en 45 min.</em>'},
+    {tag:'08 Â· CAMÃRA',       html:'Diagnostic prÃ©cis. <em>Devis</em> avant intervention.'},
+    {tag:'09 Â· DIAGNOSTIC',   html:'CamÃ©ra haute dÃ©f. <em>Pas de devinette.</em>'},
+    {tag:'10 Â· MATÃRIEL',     html:'Hydrocureur, furet, camÃ©ra. <em>Tout</em> avec nous.'},
+    {tag:'11 Â· RÃSULTAT',     html:'Le bouchon retirÃ©. <em>Pas devant.</em>'},
+   {tag:'12 Â· LAVABO',    html:'DÃ©bouchage sous lavabo. <em>Outillage professionnel.</em>'},
+   {tag:'13 Â· BAIGNOIRE',  html:'Baignoire dÃ©boucheuse. <em>RÃ©sultat immÃ©diat.</em>'},
+   {tag:'14 Â· TOILETTE',   html:'WC dÃ©bouchÃ©. <em>Intervention rapide.</em>'}
   ];
 
   let idx = 0, t0 = 0, raf = null, done = false;
